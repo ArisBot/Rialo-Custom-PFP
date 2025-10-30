@@ -1,33 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rialo PFP Generator</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rialo Custom PFP</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <h1>🎨 Rialo Custom PFP Maker</h1>
   <div class="container">
-    <div class="canvas-section">
+    <div class="canvas-area">
       <canvas id="pfpCanvas" width="512" height="512"></canvas>
       <button id="downloadBtn">Download PFP</button>
     </div>
-
-    <div class="panel">
-      <h3>Background</h3>
-      <div id="background-options" class="options"></div>
-
-      <h3>Body</h3>
-      <div id="bodybase-options" class="options"></div>
-
-      <h3>Eyes</h3>
-      <div id="eye-options" class="options"></div>
-
-      <h3>Mouth</h3>
-      <div id="mouth-options" class="options"></div>
-
-      <h3>Hair</h3>
-      <div id="hair-options" class="options"></div>
+    <div class="asset-panel">
+      <h3>Choose Assets</h3>
+      <div id="assetOptions"></div>
     </div>
   </div>
 
