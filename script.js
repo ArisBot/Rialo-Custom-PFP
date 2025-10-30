@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 const assetOptions = document.getElementById('assetOptions');
 const downloadBtn = document.getElementById('downloadBtn');
 
-const categories = ['background', 'bodybase', 'eye', 'mouth', 'hair', 'costume'];
+const categories = ['background','backpack', 'bodybase', 'eye', 'mouth', 'hair', 'costume'];
 
 categories.forEach(cat => {
   const btn = document.createElement('button');
@@ -27,5 +27,6 @@ downloadBtn.onclick = () => {
   link.href = canvas.toDataURL();
   link.click();
 };
+
 
 
