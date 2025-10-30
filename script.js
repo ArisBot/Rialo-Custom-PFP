@@ -14,7 +14,10 @@ categories.forEach(cat => {
 
 function loadAsset(category) {
   const img = new Image();
-  img.src = `assets/${category}/1.png`; // contoh file pertama
+  img.src = `assets/${category}/1.png`;
+  img.src = `assets/${category}/2.png`; 
+  img.src = `assets/${category}/3.png`; 
+  img.src = `assets/${category}/4.png`; // contoh file pertama
   img.onload = () => ctx.drawImage(img, 0, 0, 512, 512);
 }
 
@@ -24,4 +27,5 @@ downloadBtn.onclick = () => {
   link.href = canvas.toDataURL();
   link.click();
 };
+
 
